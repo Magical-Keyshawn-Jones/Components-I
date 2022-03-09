@@ -132,6 +132,10 @@ pHolder4.textContent = article. thirdParagraph;
 // Span Mods
 spanHolder.classList.add('expandButton');
 spanHolder.textContent = '+'
+spanHolder.expandButton.addEventListener('toggle', (event)=> {event.target.classList.toggle('article-open')})
+
+// Return DivHolder
+return divHolder
 };
 
 //   <div class="article">
