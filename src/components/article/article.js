@@ -132,11 +132,18 @@ pHolder4.textContent = article. thirdParagraph;
 // Span Mods
 spanHolder.classList.add('expandButton');
 spanHolder.textContent = '+'
-spanHolder.expandButton.addEventListener('toggle', (event)=> {event.target.classList.toggle('article-open')})
+spanHolder.addEventListener('click', () => {divHolder.classList.toggle('article-open')});
 
 // Return DivHolder
 return divHolder
 };
+
+// Grabbing The Parent DIV im suppose to append this to
+const parent = document.querySelectorAll('div');
+
+console.log(parent);
+
+data.forEach(item => {parent[1].appendChild(articleMaker(item))});
 
 //   <div class="article">
 //     <h2>{title of the article}</h2>
