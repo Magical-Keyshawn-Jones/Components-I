@@ -105,6 +105,33 @@ const pHolder2 = document.createElement('p');
 const pHolder3 = document.createElement('p');
 const pHolder4 = document.createElement('p');
 const spanHolder = document.createElement('span');
+
+// Appending Everything to the Div
+divHolder.appendChild(h2Holder);
+divHolder.appendChild(pHolder1);
+divHolder.appendChild(pHolder2);
+divHolder.appendChild(pHolder3);
+divHolder.appendChild(pHolder4);
+divHolder.appendChild(spanHolder);
+
+// Div Mods
+divHolder.classList.add('article');
+
+// H2 Mods
+h2Holder.textContent = article.title;
+
+// P1 Mods
+pHolder1.classList.add('date');
+pHolder1.textContent = article.date;
+
+// P2 - P4 Mods
+pHolder2.textContent = article.firstParagraph;
+pHolder3.textContent = article.secondParagraph;
+pHolder4.textContent = article. thirdParagraph;
+
+// Span Mods
+spanHolder.classList.add('expandButton');
+spanHolder.textContent = '+'
 };
 
 //   <div class="article">
